@@ -1,25 +1,33 @@
 package view;
 
 import calculator.Calculator;
+import modelCalculator.Logger;
 
 import java.util.Scanner;
 
 public class ViewCalculator {
 
     private final Calculator calculator;
+    private final Logger logger;
 
-    public ViewCalculator(Calculator calculator) {
+    public ViewCalculator(Calculator calculator, Logger logger) {
         this.calculator = calculator;
+        this.logger = logger;
     }
 
     public void run() {
         double a = promptDouble("Введите первое число ");
         String opr = prompt("Введите выполняемую операцию ").trim();
         double b = promptDouble("Введите второе число ");
+        logger.log("Передаем для вычисления выражение" + a + opr + b);
         try {
-            System.out.println("Результат вычмслений " + a + opr + b + " = " + calculator.calculate(a, b, opr));
-        }catch (UnsupportedOperationException e){
-            System.out.println("Введенная операция не поддерживается");
+            String message = "Результат вычмслений " + a + opr + b + " = " + calculator.calculate(a, b, opr);
+            System.out.println(message);
+            logger.log(message);
+        } catch (UnsupportedOperationException e) {
+            String msg = "Введенная операция не поддерживается";
+            System.out.println(msg);
+            logger.log(msg);
         }
     }
 

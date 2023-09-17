@@ -1,4 +1,5 @@
 import calculator.Calculator;
+import modelCalculator.Logger;
 import modelCalculator.MultiplyOperation;
 import modelCalculator.SubtractionOperation;
 import modelCalculator.SumOperation;
@@ -13,8 +14,10 @@ public class Main {
      * Соблюдать принципы SOLID, паттерны проектирования.
      */
     public static void main(String[] args) {
-        Calculator calculator = new Calculator(List.of(new SumOperation(),new SubtractionOperation(),new MultiplyOperation()));
-        ViewCalculator viewCalculator = new ViewCalculator(calculator);
+        Logger logger = new Logger();
+        Calculator calculator = new Calculator(List.of(new SumOperation(logger),
+                new SubtractionOperation(logger), new MultiplyOperation(logger)));
+        ViewCalculator viewCalculator = new ViewCalculator(calculator, logger);
         viewCalculator.run();
 
     }

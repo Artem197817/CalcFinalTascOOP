@@ -13,7 +13,7 @@ public class Calculator {
                 .collect(Collectors.toMap(Operation::key, Function.identity()));
     }
 
-    public double calculate(double a, double b, String operationKey)throws UnsupportedOperationException{
+    public double calculate(double a, double b, String operationKey) throws UnsupportedOperationException {
         Operation operation = operationMap.get(operationKey);
         if (operation != null) {
             return operation.calculate(a, b);
