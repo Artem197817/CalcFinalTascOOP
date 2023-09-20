@@ -1,5 +1,7 @@
 package calculator;
 
+import modelCalculator.ComplexNumber;
+
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -13,10 +15,10 @@ public class Calculator {
                 .collect(Collectors.toMap(Operation::key, Function.identity()));
     }
 
-    public double calculate(double a, double b, String operationKey) throws UnsupportedOperationException {
+    public ComplexNumber calculate(ComplexNumber firstNumber, ComplexNumber secondNumber, String operationKey) throws UnsupportedOperationException {
         Operation operation = operationMap.get(operationKey);
         if (operation != null) {
-            return operation.calculate(a, b);
+            return operation.calculate(firstNumber, secondNumber);
         }
         throw new UnsupportedOperationException();
     }

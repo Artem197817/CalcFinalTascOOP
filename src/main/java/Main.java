@@ -1,8 +1,6 @@
 import calculator.Calculator;
-import modelCalculator.Logger;
-import modelCalculator.MultiplyOperation;
-import modelCalculator.SubtractionOperation;
-import modelCalculator.SumOperation;
+import calculator.FactoryComplexNumber;
+import modelCalculator.*;
 import view.ViewCalculator;
 
 import java.util.List;
@@ -18,7 +16,12 @@ public class Main {
         Calculator calculator = new Calculator(List.of(new SumOperation(logger),
                 new SubtractionOperation(logger), new MultiplyOperation(logger)));
         ViewCalculator viewCalculator = new ViewCalculator(calculator, logger);
-        viewCalculator.run();
+        FactoryComplexNumber factoryComplexNumber = new FactoryComplexNumber(viewCalculator);
+        System.out.println("Введите первое число ");
+        ComplexNumber firstNumber = factoryComplexNumber.create();
+        System.out.println("Введите второе число ");
+        ComplexNumber secondNumber = factoryComplexNumber.create();
+        viewCalculator.run(firstNumber, secondNumber);
 
     }
 }

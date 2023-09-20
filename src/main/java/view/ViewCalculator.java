@@ -1,8 +1,10 @@
 package view;
 
 import calculator.Calculator;
+import modelCalculator.ComplexNumber;
 import modelCalculator.Logger;
 
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class ViewCalculator {
@@ -15,13 +17,12 @@ public class ViewCalculator {
         this.logger = logger;
     }
 
-    public void run() {
-        double a = promptDouble("Введите первое число ");
+    public void run(ComplexNumber firstNumber, ComplexNumber secondNumber) {
         String opr = prompt("Введите выполняемую операцию ").trim();
-        double b = promptDouble("Введите второе число ");
-        logger.log("Передаем для вычисления выражение" + a + opr + b);
+        logger.log("Передаем для вычисления выражение" + firstNumber + " " + opr + " " + secondNumber);
         try {
-            String message = "Результат вычмслений " + a + opr + b + " = " + calculator.calculate(a, b, opr);
+            String message = "Результат вычмслений " + firstNumber + " " + opr + " " + secondNumber + " = "
+                    + calculator.calculate(firstNumber, secondNumber, opr);
             System.out.println(message);
             logger.log(message);
         } catch (UnsupportedOperationException e) {
@@ -38,7 +39,7 @@ public class ViewCalculator {
         return in.nextLine();
     }
 
-    private double promptDouble(String message) {
+    public double promptDouble(String message) {
         double result;
         Scanner in = new Scanner(System.in);
         System.out.print(message);

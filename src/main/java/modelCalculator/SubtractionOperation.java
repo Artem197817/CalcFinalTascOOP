@@ -15,8 +15,10 @@ public class SubtractionOperation implements Operation {
     }
 
     @Override
-    public double calculate(double a, double b) {
-        logger.log("Выполняется вычитание чисел " + a + " - " + b);
-        return a - b;
+    public ComplexNumber calculate(ComplexNumber firstNumber, ComplexNumber secondNumber) {
+        logger.log("Выполняется вычитание чисел " + firstNumber + " - " + secondNumber);
+        double resultRealPart = firstNumber.getRealPart() - secondNumber.getRealPart();
+        double resultImaginaryPart = firstNumber.getImaginaryPart() - secondNumber.getImaginaryPart();
+        return new ComplexNumber(resultRealPart, resultImaginaryPart);
     }
 }

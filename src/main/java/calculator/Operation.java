@@ -1,6 +1,8 @@
 package calculator;
 
+import modelCalculator.ComplexNumber;
+
 public interface Operation {
     String key();
-    double calculate (double a, double b);
+    ComplexNumber calculate (ComplexNumber firstNumber, ComplexNumber secondNumber);
 }

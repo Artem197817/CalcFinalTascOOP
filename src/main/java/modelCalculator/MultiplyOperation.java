@@ -16,8 +16,15 @@ public class MultiplyOperation implements Operation {
     }
 
     @Override
-    public double calculate(double a, double b) {
-        logger.log("Выполняется умножение чисел " + a + " * " + b);
-        return a * b;
+    public ComplexNumber calculate(ComplexNumber firstNumber, ComplexNumber secondNumber) {
+        logger.log("Выполняется умножение чисел " + firstNumber + " * " + secondNumber);
+        double a = firstNumber.getRealPart();
+        double b = firstNumber.getImaginaryPart();
+        double c = firstNumber.getRealPart();
+        double d = firstNumber.getImaginaryPart();
+        double resultRealPart = a * c - b * d;
+        double resultImaginaryPart = a * d + b * c;
+        return new ComplexNumber(resultRealPart, resultImaginaryPart);
+
     }
 }
