@@ -1,6 +1,8 @@
 package calculator;
 
 import modelCalculator.ComplexNumber;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import service.Logger;
 import view.ViewCalculator;
 
@@ -9,15 +11,17 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+@Component
 public class Calculator {
     private final Map<String, Operation> operationMap;
     private final ViewCalculator viewCalculator;
     private final Logger logger;
 
     /**
-     * Конструктор класса собирающий сервисы вычислений в Мар по ключу операции при реализации Spring  (ветка Spring)сам
+     * Конструктор класса собирающий сервисы вычислений в Мар по ключу операции. При реализации Spring (ветка Spring) сам
      * собирает нужные сервисы в List. В результате добавления операций не нарушаеться принцип ОСР
      */
+    @Autowired
     public Calculator(List<Operation> allOperation, ViewCalculator viewCalculator, Logger logger) {
         operationMap = allOperation.stream()
                 .collect(Collectors.toMap(Operation::key, Function.identity()));

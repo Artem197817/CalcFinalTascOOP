@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da0135fd-842f-4fc3-9de2-07a8b668d6e9" name="Changes" comment="Калькулятор + Logger + Complex">
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelCalculator/CalculatorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/FactoryComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/CreateComplexNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/MultiplyOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MultiplyOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/SubtractionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SubtractionOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/SumOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SumOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CreateComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CreateComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MultiplyOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MultiplyOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/SubtractionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SubtractionOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/SumOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SumOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/ViewCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ViewCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +34,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,7 +57,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/artem/IdeaProjects/Semi6OOP"
   }
 }]]></component>
@@ -98,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695215128516</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Калькулятор + Logger + Complex">
+      <created>1695646328597</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695646328597</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

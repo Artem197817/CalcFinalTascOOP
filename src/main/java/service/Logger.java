@@ -1,10 +1,18 @@
 package service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+@Service
 public class Logger {
+
+    @Autowired
+    public Logger() {
+    }
 
     public void log(String message) {
         File file = new File("log.txt");

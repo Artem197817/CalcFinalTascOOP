@@ -1,12 +1,16 @@
-package calculator;
+package service;
 
 import modelCalculator.ComplexNumber;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import view.ViewCalculator;
 
+@Service
 public class CreateComplexNumber {
 
     public ViewCalculator viewCalculator;
 
+    @Autowired
     public CreateComplexNumber(ViewCalculator viewCalculator) {
         this.viewCalculator = viewCalculator;
     }

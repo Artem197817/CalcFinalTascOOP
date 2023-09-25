@@ -2,10 +2,14 @@ package service;
 
 import calculator.Operation;
 import modelCalculator.ComplexNumber;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SubtractionOperation implements Operation {
     private final Logger logger;
 
+    @Autowired
     public SubtractionOperation(Logger logger) {
         this.logger = logger;
     }
