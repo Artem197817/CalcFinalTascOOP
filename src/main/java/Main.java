@@ -2,7 +2,7 @@ import calculator.Calculator;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import service.CreateComplexNumber;
 import modelCalculator.*;
-import view.ViewCalculator;
+
 
 public class Main {
     /**
@@ -14,12 +14,11 @@ public class Main {
 
 
         var context = new AnnotationConfigApplicationContext(CalculatorConfig.class);
-        var viewCalculator = context.getBean(ViewCalculator.class);
-        CreateComplexNumber factoryComplexNumber = new CreateComplexNumber(viewCalculator);
+        var createComplexNumber = context.getBean(CreateComplexNumber.class);
         System.out.println("Введите первое число ");
-        ComplexNumber firstNumber = factoryComplexNumber.create();
+        ComplexNumber firstNumber = createComplexNumber.create();
         System.out.println("Введите второе число ");
-        ComplexNumber secondNumber = factoryComplexNumber.create();
+        ComplexNumber secondNumber = createComplexNumber.create();
         var calculator = context.getBean(Calculator.class);
         calculator.run(firstNumber, secondNumber);
 
