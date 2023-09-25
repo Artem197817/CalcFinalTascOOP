@@ -1,4 +1,4 @@
-package calculator;
+package service;
 
 import modelCalculator.ComplexNumber;
 import view.ViewCalculator;
