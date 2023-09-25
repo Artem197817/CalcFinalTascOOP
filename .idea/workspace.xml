@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da0135fd-842f-4fc3-9de2-07a8b668d6e9" name="Changes" comment="Калькулятор + Logger">
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/FactoryComplexNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelCalculator/ComplexNumber.java" afterDir="false" />
+    <list default="true" id="da0135fd-842f-4fc3-9de2-07a8b668d6e9" name="Changes" comment="Калькулятор + Logger + Complex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/MultiplyOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelCalculator/MultiplyOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/SubtractionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelCalculator/SubtractionOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/SumOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelCalculator/SumOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/FactoryComplexNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/CreateComplexNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/MultiplyOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MultiplyOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/SubtractionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SubtractionOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelCalculator/SumOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/SumOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/ViewCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ViewCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/artem/IdeaProjects/CalcFinalTascOOP"
+    "last_opened_file_path": "/home/artem/IdeaProjects/Semi6OOP"
   }
 }]]></component>
   <component name="RunManager">
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694927150451</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Калькулятор + Logger + Complex">
+      <created>1695215128516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695215128516</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Калькулятор" />
     <MESSAGE value="Калькулятор + Logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Калькулятор + Logger" />
+    <MESSAGE value="Калькулятор + Logger + Complex" />
+    <option name="LAST_COMMIT_MESSAGE" value="Калькулятор + Logger + Complex" />
   </component>
 </project>

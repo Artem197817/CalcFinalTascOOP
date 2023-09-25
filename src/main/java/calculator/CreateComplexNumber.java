@@ -3,11 +3,11 @@ package calculator;
 import modelCalculator.ComplexNumber;
 import view.ViewCalculator;
 
-public class FactoryComplexNumber {
+public class CreateComplexNumber {
 
     public ViewCalculator viewCalculator;
 
-    public FactoryComplexNumber(ViewCalculator viewCalculator) {
+    public CreateComplexNumber(ViewCalculator viewCalculator) {
         this.viewCalculator = viewCalculator;
     }
 

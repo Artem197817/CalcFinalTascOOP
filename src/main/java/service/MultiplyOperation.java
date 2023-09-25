@@ -1,6 +1,7 @@
-package modelCalculator;
+package service;
 
 import calculator.Operation;
+import modelCalculator.ComplexNumber;
 
 public class MultiplyOperation implements Operation {
 

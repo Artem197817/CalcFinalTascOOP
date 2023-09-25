@@ -1,7 +1,8 @@
-package modelCalculator;
+package service;
 
 
 import calculator.Operation;
+import modelCalculator.ComplexNumber;
 
 public class SumOperation implements Operation {
     private final Logger logger;
